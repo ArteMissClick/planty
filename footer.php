@@ -13,36 +13,9 @@
 
 </div><!-- #content -->
 
-<?php
-get_sidebar();
-?>
 <footer id="colophon" class="site-footer">
-	<?php
 
-	$show_site_info = (bool) get_theme_mod( 'getwid_base_show_footer_text', true );
-	if ( $show_site_info ):
-		?>
-		<div class="site-info">
-			<?php
-			$dateObj           = new DateTime;
-			$current_year      = $dateObj->format( "Y" );
-			$site_info_default = apply_filters( 'getwid_base_site_info',
-				_x( '%2$s &copy; %1$s. All Rights Reserved.<br/><span style="font-size: .875em">Designed by <a href="https://motopress.com/" target="_blank" rel="noopener noreferrer nofollow">MotoPress</a>.</span>', 'Default footer text. %1$s - current year, %2$s - site title.', 'getwid-base' )
-			);
-			$site_info         = get_theme_mod( 'getwid_base_footer_text', false ) ? get_theme_mod( 'getwid_base_footer_text' ) : $site_info_default;
-
-			echo wp_kses_post(
-				sprintf(
-					$site_info,
-					$current_year,
-                    get_bloginfo('name')
-				)
-			);
-			?>
-		</div>
-	<?php
-	endif;
-	?>
+	<p class="legal">Mentions Légales</p>
 </footer><!-- #colophon --></div><!-- #page -->
 
 <?php wp_footer(); ?>

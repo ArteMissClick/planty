@@ -11,3 +11,57 @@ Updated: 2023-11-22 16:53:54
 
 */
 
+/*Header*/
+
+#masthead {
+    padding: 0;
+}
+
+.site-branding {
+    padding-top: 10px;
+    padding-left: 30px;
+    width: 201px;
+    height: 19px;
+}
+
+#menu-item-23 {
+    padding: 12px 0px 12px 35px;
+}
+
+#menu-item-23 a:hover {
+    color: black;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+#menu-item-35 {
+    padding: 12px 35px 12px 35px;
+}
+
+#menu-item-35 a:hover {
+    color: black;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+#menu-item-35:hover {
+    color: black;
+}
+
+#menu-item-22 {
+    color: #FFFFFF;
+    background-color: #DC9F96;
+    padding: 12px 35px 12px 35px;
+}
+
+#menu-item-22 a:hover {
+    color: #FFFFFF;
+    background-color: #C02E44;
+}
+
+/*Footer*/
+
+#colophon .legal {
+    color: black;
+    text-align: center;
+}
