@@ -54,9 +54,47 @@ Updated: 2023-11-22 16:53:54
     padding: 12px 35px 12px 35px;
 }
 
-#menu-item-22 a:hover {
+#menu-item-22 a {
+    width: 100%;
+}
+
+#menu-item-22:hover {
     color: #FFFFFF;
     background-color: #C02E44;
+}
+
+/*Body*/
+
+
+#post-14 > div > div.wp-block-getwid-section.alignfull.section-accueil.alignfull.getwid-margin-bottom-none.getwid-init > div > div > div.wp-block-getwid-section__background-holder > div.wp-block-getwid-section__background.has-background {
+    border-bottom: solid 10px #E3D9D0;
+    border-radius: 0px 0px 10% 10%;
+}
+
+.paragraph-energy {
+    width: 460px;
+}
+
+.txt-img-gouts {
+    width: 80%;
+}
+
+.wp-block-button .wp-block-button__link {
+    text-transform: none;
+}
+
+.img-fond-P {
+    background: url(img/vinicius-wiesehofer-UOavP_Z38lE-unsplash\ 1.png);
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.wp-block-media-text__media img {
+    background: url(img/vinicius-wiesehofer-UOavP_Z38lE-unsplash\ 1.png);
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 /*Footer*/
