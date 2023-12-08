@@ -202,6 +202,77 @@ body * {
     transform: scale(0.75) translate(-350px, -450px);
 }
 
+.titre-equipe {
+    margin-bottom: 50px;
+}
+
+.colonnes-equipe {
+    padding-left: 25px;
+}
+
+.section-equipe {
+    position: relative;
+}
+
+.img-branche-equipe {
+    position: absolute;
+    transform: scale(0.59) translate(1800px, -465px);
+}
+
+/*Formulaire de contact simple*/
+
+.section-form-simple {
+    position: relative;
+}
+
+#wpcf7-f132-p16-o1 > form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.titre-contact-simple {
+    margin-bottom: 50px;
+}
+
+input, textarea {
+    margin-top: 20px;
+    border-radius: 10px!important;
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 237px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+.section-form-simple p {
+    margin-bottom: 0px;
+}
+
+.section-form-simple .wpcf7-submit {
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: none;
+    margin-top: 0;
+    padding: 25px 71px 25px 71px;
+}
+
+#wpcf7-f132-p16-o1 > form > p:nth-child(5) > span {
+    position: absolute;
+}
+
+.img-fleur-contact {
+    position: absolute;
+    z-index: -1;
+    transform: scale(1) translate(-87px, -220px);
+}
 
 /*Commander*/
 
@@ -213,7 +284,6 @@ body * {
 .txt-commande-banniere {
     max-height: 50px;
 }
-
 
 /*Pre-footer*/
 
