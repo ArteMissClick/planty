@@ -11,10 +11,25 @@ Updated: 2023-11-22 16:53:54
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+body * {
+   font-family: 'Syne', sans-serif;
+}
+
 /*Header*/
+
+.entry-header {
+    display: none;
+}
 
 #masthead {
     padding: 0;
+    border-bottom: none;
+}
+
+.site-content {
+    margin-bottom: 0;
 }
 
 .site-branding {
@@ -25,7 +40,14 @@ Updated: 2023-11-22 16:53:54
 }
 
 #menu-item-23 {
-    padding: 12px 0px 12px 35px;
+    width: 200px;
+}
+
+#menu-item-23 a {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 0%;
+    padding-left: 60px;
 }
 
 #menu-item-23 a:hover {
@@ -35,7 +57,17 @@ Updated: 2023-11-22 16:53:54
 }
 
 #menu-item-35 {
-    padding: 12px 35px 12px 35px;
+    width: 161px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+}
+
+#menu-item-35 a {
+    width: 161px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
 }
 
 #menu-item-35 a:hover {
@@ -51,11 +83,17 @@ Updated: 2023-11-22 16:53:54
 #menu-item-22 {
     color: #FFFFFF;
     background-color: #DC9F96;
-    padding: 12px 35px 12px 35px;
+    width: 210px;
+    height: 78px;
+    display: flex;
+    align-items: center;
 }
 
 #menu-item-22 a {
-    width: 100%;
+    width: 210px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
 }
 
 #menu-item-22:hover {
@@ -63,43 +101,133 @@ Updated: 2023-11-22 16:53:54
     background-color: #C02E44;
 }
 
-/*Body*/
+.menu-item:last-child:hover a {
+    color: #FFFFFF;
+}
 
+.menu-item-23 a:visited {
+    color: black!important;
+}
+
+.menu-item-35 a:visited {
+    color: black!important;
+}
+
+.menu-item-22 a:visited {
+    color: white!important;
+}
+
+/*Body*/
+/*Main page */
 
 #post-14 > div > div.wp-block-getwid-section.alignfull.section-accueil.alignfull.getwid-margin-bottom-none.getwid-init > div > div > div.wp-block-getwid-section__background-holder > div.wp-block-getwid-section__background.has-background {
     border-bottom: solid 10px #E3D9D0;
-    border-radius: 0px 0px 10% 10%;
+    border-radius: 0% 0% 50% 50% / 0% 0% 10% 10%;
+}
+
+.paragraph-all {
+    line-height: 22px;
 }
 
 .paragraph-energy {
-    width: 460px;
+    width: 500px;
+    padding-bottom: 50px;
+}
+
+.titre-les-gouts {
+    margin-bottom: 0;
+}
+
+.column-gouts-main {
+    gap: 30px;
+}
+
+.column-gouts {
+    margin: 0!important;
+    width: 262px;
+}
+
+.img-gouts {
+    min-height: 262px;
+    height: 262px;
+    width: 393px;
 }
 
 .txt-img-gouts {
+    line-height: 60px;
+}
+
+.txt-img-gouts-3 {
     width: 80%;
 }
+
 
 .wp-block-button .wp-block-button__link {
     text-transform: none;
 }
 
-.img-fond-P {
-    background: url(img/vinicius-wiesehofer-UOavP_Z38lE-unsplash\ 1.png);
-    background-size: cover;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+#post-14 > div > div.wp-block-getwid-section.alignfull.section-gouts.alignfull.getwid-init > div > div > div.wp-block-getwid-section__background-holder > div.wp-block-getwid-section__background.has-background {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
 }
 
-.wp-block-media-text__media img {
-    background: url(img/vinicius-wiesehofer-UOavP_Z38lE-unsplash\ 1.png);
-    background-size: cover;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+.pensent-p-column-single {
+    min-width: 343px;
 }
+
+.pensent-p-column {
+    gap: 50px;
+}
+
+.wp-block-column:not(:last-child) {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.paragraph-pensent {
+    line-height: 22px;
+}
+
+/*Nous rencontrer*/
+
+.section-rencontre {
+    position: relative;
+}
+
+#post-16 > div > div.wp-block-getwid-section.alignfull.section-rencontre.alignfull.getwid-section-content-custom-width.getwid-init > div > div > div.wp-block-getwid-section__background-holder > div.wp-block-getwid-section__background.has-background {
+    border-radius: 0% 0% 50% 50% / 0% 0% 20% 20%;
+}
+
+.img-fleur-rencontre {
+    position: absolute;
+    transform: scale(0.75) translate(-350px, -450px);
+}
+
+
+/*Commander*/
+
+.img-commandes {
+    height: 200px;
+    width: 300px;
+}
+
+.txt-commande-banniere {
+    max-height: 50px;
+}
+
+
+/*Pre-footer*/
+
 
 /*Footer*/
 
+.site-footer {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
 #colophon .legal {
     color: black;
-    text-align: center;
+
 }

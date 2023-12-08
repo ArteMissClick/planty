@@ -15,7 +15,7 @@
 
 <footer id="colophon" class="site-footer">
 
-	<p class="legal">Mentions Légales</p>
+	<a href="http://localhost/planty/mentions-legales/" class="legal">Mentions Légales</a>
 </footer><!-- #colophon --></div><!-- #page -->
 
 <?php wp_footer(); ?>
