@@ -135,7 +135,7 @@ body * {
 }
 
 .paragraph-energy {
-    width: 500px;
+    max-width: 500px!important;
     padding-bottom: 50px;
 }
 
@@ -148,8 +148,9 @@ body * {
 }
 
 .column-gouts {
+    display: flex;
+    justify-content: center;
     margin: 0!important;
-    width: 262px;
 }
 
 .img-gouts {
@@ -175,12 +176,30 @@ body * {
     border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
 }
 
-.pensent-p-column-single {
-    min-width: 343px;
+.pensent-p-column {
+    display: flex!important;
+    flex-wrap: wrap!important;
+    justify-content: center;
+    gap: 50px;
 }
 
-.pensent-p-column {
-    gap: 50px;
+.pensent-p-column-single {
+    min-width: 310px!important;
+}
+
+.pensent-p-column-single .wp-block-media-text {
+    display: flex;
+    justify-content: center;
+}
+
+.pensent-p-column-single .wp-block-media-text__media {
+    width: 151.69px;
+    min-width: 151.69px;
+}
+
+.pensent-p-column-single .wp-block-media-text__content {
+    width: 500px!important;
+    max-width: 500px!important;
 }
 
 .wp-block-column:not(:last-child) {
@@ -391,5 +410,57 @@ label {
 
 #colophon .legal {
     color: black;
+
+}
+
+
+@media screen and (max-width: 767.8px) {
+
+    /*Accueil*/
+
+    .titre-boisson-accueil {
+        font-size: 1.5rem!important;
+    }
+
+    .titre-les-gouts {
+        font-size: 1.5rem;
+    }
+
+    .column-gouts-main {
+        gap: 30px;
+        display: flex!important;
+    }
+
+    .column-gouts {
+        width: 193px!important;
+    }
+
+    .img-gouts {
+        min-height: 180px;
+        height: 180px;
+        width: 270px;
+    }
+
+    .txt-img-gouts {
+        font-size: 1.9rem!important;
+        line-height: 40px;
+    }
+
+    .titre-pensent {
+        font-size: 1.5rem!important;
+    }
+
+    .pensent-p-column-single {
+        min-width: 300px!important;
+    }
+
+    .pensent-p-column-single .wp-block-media-text {
+        display: flex;
+    }
+
+    .pensent-p-column-single .wp-block-media-text__media {
+        min-width: 120px;
+        width: 120px;
+    }
 
 }
