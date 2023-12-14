@@ -25,5 +25,12 @@ function theme_enqueue_styles()
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
 }
     
+add_filter( 'wp_nav_menu_items', 'add_admin_link', 10, 2 );
 
+function add_admin_link( $items, $args ) {
+   if (is_user_logged_in() && $args->menu_id == 'primary-menu') {
+         $items .= '<li class="admin_menu_li"><a href="'. get_admin_url() .'" class="admin_link_menu">Admin</a></li>';
+   }
+   return $items;
+}
 // END ENQUEUE PARENT ACTION
