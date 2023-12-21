@@ -46,6 +46,7 @@ body * {
 
 .primary-menu-wrapper {
     flex-direction: row-reverse;
+    transition-duration: 0s;
 }
 
 #menu-item-23 {
@@ -84,6 +85,22 @@ body * {
 
 .main-navigation a.commander_button:hover {
     background-color: #C02E44;
+}
+
+.primary-menu-wrapper .commander_button {
+    z-index: 1;
+    opacity: 0;
+    display: block;
+    -webkit-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+}
+
+.main-navigation.toggled .primary-menu-wrapper .commander_button {
+    opacity: 1;
+    -webkit-transition: opacity .3s ease .5s;
+    -o-transition: opacity .3s ease .5s;
+    transition: opacity .3s ease .5s;
 }
 
 .admin_menu_li {
@@ -227,15 +244,47 @@ body .is-layout-flex .column-gouts {
     border-radius: 0% 0% 50% 50% / 0% 0% 20% 20%;
 }
 
+#post-16 > div > div.wp-block-getwid-section.alignfull.section-equipe.alignfull.getwid-margin-top-large.getwid-init > div > div {
+    max-width: 1300px;
+}
+
 .section-rencontre {
     position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#post-16 > div > div.wp-block-getwid-section.alignfull.section-rencontre.alignfull.getwid-margin-bottom-none.getwid-init {
+    background-color: #ECE2DA;
+}
+
+#post-16 > div > div.wp-block-getwid-section.alignfull.section-rencontre.alignfull.getwid-margin-bottom-none.getwid-init > div > div > div.wp-block-getwid-section__content > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#post-16 > div > div.wp-block-getwid-section.alignfull.section-rencontre.alignfull.getwid-margin-bottom-none.getwid-init > div > div {
+    max-width: 1250px;
+    width: 1250px;
+}
+
+.section-rencontre h1 {
+    max-width: 750px;
+    align-self: center;
+}
+
+.section-rencontre p {
+    max-width: 750px;
+    align-self: center;
 }
 
 .img-fleur-rencontre-1 {
     position: absolute;
-    transform: scale(0.75);
-    top: -160px;
-    left: -280px;
+    z-index: -1;
+    width: clamp(150px, 20vw, 200px);
+    top: clamp(-60px, -60px, 20vh);
+    left: 0px;
+    font-size: 50px;
 }
 
 .section-equipe {
@@ -248,16 +297,21 @@ body .is-layout-flex .column-gouts {
 }
 
 .colonnes-equipe {
+    justify-content: center;
     padding-left: 25px;
     gap: 50px;
+}
+
+.colonnes-equipe .colonne-unique-equipe {
+    max-width: 270px;
 }
 
 
 .img-branche-equipe {
     position: absolute;
-    transform: scale(0.55);
-    bottom: -163px;
-    right: -240px;
+    transform: scale(0.48);
+    bottom: -143px;
+    right: -95px;
     z-index: -1;
 }
 
@@ -465,7 +519,8 @@ label {
 
 }
 
-@media screen and (max-width: 1439.8px) {
+/*
+@media screen and (max-width: 1124px) {
 
     .img-fleur-rencontre-1 {
         top: -250px;
@@ -477,6 +532,48 @@ label {
         right: -50px;
     }
 
+}
+*/
+
+@media screen and (max-width: 992px) {
+
+    .primary-menu-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .main-navigation a.commander_button {
+        align-self: center;
+    }
+
+    #primary-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #menu-item-23 {
+        align-self: center;
+    }
+
+    #menu-item-23 a {
+        padding-right: 0px;
+    }
+
+    #menu-item-23 a:hover {
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+
+    .admin_menu_li {
+        justify-content: center;
+    }
+
+    .admin_menu_li a {
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 767.8px) {

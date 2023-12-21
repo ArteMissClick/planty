@@ -80,7 +80,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 					<span class="screen-reader-text"><?php esc_html_e('Menu', 'getwid-base');?></span>
 				</button>
 				<div class="primary-menu-wrapper">
-				<a href="http://localhost/planty/commander/" class="commander_button">Commander</a>
+					<a href="http://localhost/planty/commander/" class="commander_button">Commander</a>
 
 					<?php
 					wp_nav_menu( array(
