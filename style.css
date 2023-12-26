@@ -89,7 +89,7 @@ body * {
 
 .primary-menu-wrapper .commander_button {
     z-index: 1;
-    opacity: 0;
+    opacity: 1;
     display: block;
     -webkit-transition: opacity .3s ease;
     -o-transition: opacity .3s ease;
@@ -282,7 +282,7 @@ body .is-layout-flex .column-gouts {
     position: absolute;
     z-index: -1;
     width: clamp(150px, 20vw, 200px);
-    top: clamp(-60px, -60px, 20vh);
+    top: clamp(-60px, -60px, 20vw);
     left: 0px;
     font-size: 50px;
 }
@@ -545,6 +545,10 @@ label {
 
     .main-navigation a.commander_button {
         align-self: center;
+    }
+
+    .primary-menu-wrapper .commander_button {
+        opacity: 0;
     }
 
     #primary-menu {
