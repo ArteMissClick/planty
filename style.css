@@ -240,10 +240,6 @@ body .is-layout-flex .column-gouts {
 
 /*Nous rencontrer*/
 
-#post-16 > div > div.wp-block-getwid-section.alignfull.section-rencontre.alignfull.getwid-margin-bottom-none.getwid-init {
-    border-radius: 0% 0% 50% 50% / 0% 0% 20% 20%;
-}
-
 #post-16 > div > div.wp-block-getwid-section.alignfull.section-equipe.alignfull.getwid-margin-top-large.getwid-init > div > div {
     max-width: 1300px;
 }
@@ -256,6 +252,7 @@ body .is-layout-flex .column-gouts {
 
 #post-16 > div > div.wp-block-getwid-section.alignfull.section-rencontre.alignfull.getwid-margin-bottom-none.getwid-init {
     background-color: #ECE2DA;
+    border-radius: 0% 0% 50% 50% / 0% 0% 20% 20%;
 }
 
 #post-16 > div > div.wp-block-getwid-section.alignfull.section-rencontre.alignfull.getwid-margin-bottom-none.getwid-init > div > div > div.wp-block-getwid-section__content > div {
