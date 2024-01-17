@@ -240,7 +240,7 @@ body .is-layout-flex .column-gouts {
 
 /*Nous rencontrer*/
 
-#post-16 > div > div.wp-block-getwid-section.alignfull.section-rencontre.alignfull.getwid-section-content-custom-width.getwid-init > div > div > div.wp-block-getwid-section__background-holder > div.wp-block-getwid-section__background.has-background {
+#post-16 > div > div.wp-block-getwid-section.alignfull.section-rencontre.alignfull.getwid-margin-bottom-none.getwid-init {
     border-radius: 0% 0% 50% 50% / 0% 0% 20% 20%;
 }
 
@@ -439,6 +439,7 @@ label {
     font-size: 1.2rem;
     font-weight: 800;
     text-transform: uppercase;
+    line-height: 25px;
 }
 
 .fruit-entier .compteur-fruit {
@@ -626,6 +627,10 @@ label {
     }
 
     /*Nous rencontrer*/
+
+    #post-16 > div > div.wp-block-getwid-section.alignfull.section-rencontre.alignfull.getwid-margin-bottom-none.getwid-init {
+        border-radius: 0% 0% 50% 50% / 0% 0% 10% 10%;
+    }
 
     .colonnes-equipe {
         padding-left: 0px;
